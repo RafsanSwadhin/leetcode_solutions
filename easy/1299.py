@@ -12,8 +12,10 @@ print(res+[-1])
 '''
 
 
-#arr = [17, 18, 5, 4, 6, 1]
-arr = [1]
+'''
+
+arr = [17, 18, 5, 4, 6, 1]
+
 res = []
 max_val = -1  # Start with -1 as the last element should be -1
 
@@ -27,3 +29,13 @@ res.reverse()
 
 print(res)
 
+'''
+
+arr = [17, 18, 5, 4, 6, 1]
+rightmax = -1
+for i in range(len(arr)-1, -1, -1):
+    newmax = max(rightmax,arr[i])
+    arr[i] = rightmax
+    rightmax = newmax
+
+print(arr)
