@@ -1,14 +1,15 @@
-s = "abc"
+s = "bwc"
 t = "ahbgdc"
 
-'''
-res = " "
-for j in s:
-    if j in t:
-        res.join(j)
-print(res)
+l,r = 0,0
 
-'''
-w  = "p"
-for i in s:
-    print(w.join(i))
+while l < len(s) and r < len(t):
+    if s[l] == t[r]:
+        l += 1
+    r += 1
+
+if l == len(s):
+    print(True)
+else:
+    print(False)
+
