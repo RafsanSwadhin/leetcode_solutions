@@ -31,3 +31,18 @@ count_list.sort(reverse=True)
 print(count_list[:k])
 
 
+
+
+n = "the sky is blue"
+new_n = n.split()  # ['the', 'sky', 'is', 'blue']
+left = 0
+right = len(new_n) - 1
+
+# Loop to reverse the list
+while left < right:
+    # Swap the elements at 'left' and 'right' indices
+    new_n[left], new_n[right] = new_n[right], new_n[left]
+    left += 1
+    right -= 1
+
+print(new_n)
