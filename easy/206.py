@@ -151,29 +151,20 @@ class Solution:
 # ---
 
 # ### 🧪 But If You Do This:
-# ```python
 # print(prev.val)  # 👉 It will just print: 5
-# ```
 
 # Because you're only printing the value of that node.
 
 # But if you **traverse it**, like this:
-# ```python
 # result = []
 # while prev:
 #     result.append(prev.val)
 #     prev = prev.next
-# ```
 
 # You’ll get:
-# ```
 # [5, 4, 3, 2, 1]
-# ```
-
-# ---
 
 # ### 🔚 Summary:
 
 # - `prev` points to the full **reversed linked list**.
 # - You just need to **traverse** from `prev` to get all the values.
-
